@@ -1,6 +1,6 @@
 {
   "name": "@bryan__parisot/component-modal-dropdown-datepicker-tailwind-css",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": [
