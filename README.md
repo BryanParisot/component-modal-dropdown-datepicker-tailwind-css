@@ -36,35 +36,30 @@ Library with modal content, dropdown and datePicker for easy use
 
 ```
 
-### Modal use
+### datePicker use
 
 #### props: 
-  - selected 
-  - setSelected
+  - value 
   - label,
-  - options,
-  - placeholder,
   - name,
   - onChange,
 
  #### Example :
 ```bash
-            <Dropdown
-              placeholder="Choose your state"
-              setSelected={setState}
-              selected={state.name}
-              options={states}
-              label="State"
-              name="State"
-              onChange={(e) => e.target.value}
+            <DatePickers
+              name="startDate"
+              label="Start Date"
+              onChange={(e) => setStartDate(e.target.value)}
+              value={startDate}
             />
+
 
 ```
 
 Just add your array in options
 
 
-### datePicker
+### Modal
 
 #### props: 
 
@@ -75,11 +70,11 @@ Just add your array in options
 
 #### Example :
 ```bash
-        <Modal
-          button="Back to employee creation"
+         <Modal
+          title="Users create"
           subtitle=" You can access the users in the
                     employees"
-          title="Users create"
+          button="Back to employee creation"
           displayModal={setValidate}
         />
 
